@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: #333333;
+    --primary: #489dff;
+    --muted: #525f7f;
+    --border: #f0f0f0;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: white;
+  color: var(--foreground);
+}
+
+button {
+  font-family: var(--secondary-font);
+}
